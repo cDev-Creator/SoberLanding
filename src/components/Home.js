@@ -1,11 +1,11 @@
 import Showcase from './Showcase';
 import FAQ from './FAQ';
+import Quote from './Quote';
 import Footer from './Footer';
 import Copyright from './Copyright';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
-    const amenities = ['outdoor setainf', 'BMW sd sds s', 'Audi sdsd sdsd'];
     return (  
         <div>
             <Showcase />
@@ -36,6 +36,7 @@ const Home = () => {
                     </div>
                 </Container>
             </section> 
+            < Quote />
         
         {/* <FAQ /> */}
         < Footer />
