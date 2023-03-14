@@ -1,4 +1,6 @@
 import Showcase from './Showcase';
+import FAQ from './FAQ';
+import Footer from './Footer';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
@@ -16,7 +18,6 @@ const Home = () => {
                         <p>Our sober housing offers a wide range of amenities to ensure that you feel comfortable and at home during your stay with us.</p>
                         <ul>
                             <li>Fully equipped kitchen with appliances and cooking utensils</li>
-                            <li>Comfortable bedrooms with clean linens and bedding</li>
                             <li>Shared living areas with comfortable furniture and TV</li>
                             <li>High-speed internet and Wi-Fi access</li>
                             <li>Laundry room with washing machine and dryer</li>
@@ -30,11 +31,15 @@ const Home = () => {
 
                         <h2>We Want to Help</h2>  
                         <p>At Sober Landing, you'll have access to nearby meetings, employment opportunities, sponsors, and new sober friends who are all committed to helping you succeed. We understand the importance of routine and work hard to create a safe and supportive environment while prioritizing recovery.</p>   
-                        <p>Don't hesitate to contact us if you want to know more about the amenities we provide. We would love to show you around our facility and figure out whether our sober living accommodations are a good match for you. Together, we can assist you in staying sober and continuing on the path to recovery. We're eager to provide you with support throughout your journey!</p>              
+                        <p>Don't hesitate to contact us! We would love to show you around our facility and figure out whether our sober living accommodations are a good match for you. Together, we can assist you in staying sober and continuing on the path to recovery. We're eager to provide you with support throughout your journey!</p>              
                     </div>
                 </Container>
-            </section>         
-        </div>    
+            </section> 
+        
+        {/* <FAQ /> */}
+        < Footer />
+
+        </div>  
     );
   }
 export default Home;
