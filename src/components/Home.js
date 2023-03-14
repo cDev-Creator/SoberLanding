@@ -1,6 +1,7 @@
 import Showcase from './Showcase';
 import FAQ from './FAQ';
 import Footer from './Footer';
+import Copyright from './Copyright';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
@@ -38,6 +39,8 @@ const Home = () => {
         
         {/* <FAQ /> */}
         < Footer />
+        < Copyright />
+
 
         </div>  
     );
