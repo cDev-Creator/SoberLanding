@@ -1,11 +1,8 @@
-import {Container} from 'react-bootstrap';
+import Showcase from './Showcase';
 
 const Home = () => {
     return (  
-        <Container>
-        <h1>Home</h1>
-        </Container>
+        <Showcase />
     );
-}
- 
+  }
 export default Home;
