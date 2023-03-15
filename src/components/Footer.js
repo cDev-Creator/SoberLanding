@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </div>
           <div class="col-md">
-          <iframe style={{width:'100%', height:'100%'}}src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <iframe style={{width:'100%', height:'100%'}} src="https://maps.google.com/maps?q=6716%20riverwood%20live%20oak%20texas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
 
