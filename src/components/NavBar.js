@@ -1,32 +1,37 @@
-import {Container, Button,Form, Nav, Navbar, NavDropdown} from 'react-bootstrap';
-import {BrowserRouter as Router,Link} from "react-router-dom";
+import {Container, Nav, Navbar} from 'react-bootstrap';
+import {BrowserRouter as NavLink} from "react-router-dom";
 
 export const NavBar = () => {
     return (
-
-    <Navbar collapseOnSelect expand="lg">
-    <Container>
-        <Navbar.Brand >
-        <Link to="/home" style={{fontSize:'30px', backgroundColor:'#ffffff'}}>Sober Landing</Link>
-        </Navbar.Brand>
-          
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="me-auto"></Nav>
-        <Nav className="me-auto"></Nav>
-        <Nav className="me-auto"></Nav>
-            <Nav className="me-auto">
-                
-                <Link to="/home" >Home</Link>
-                <Link to="/about" >About</Link>
-                <Link to="/locations"  >Our House</Link> 
-                <Link to="/contact" >Contact</Link>
-                <Link to="/faq" >FAQ</Link>
-               
+      <Navbar collapseOnSelect expand="lg">
+        <Container>
+          <Navbar.Brand>
+            <h1 style={{fontSize:'30px'}}>Sober Landing</h1>
+          </Navbar.Brand>
+            
+          <Navbar.Toggle aria-controls="responsive-navbar-nav bg-dark" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
+              <NavLink exact to="/home" activeClassName="active">
+                Home
+              </NavLink>
+              <NavLink to="/about" activeClassName="active">
+                About
+              </NavLink>
+              <NavLink to="/locations" activeClassName="active">
+                Our House
+              </NavLink>
+              <NavLink to="/contact" activeClassName="active">
+                Contact
+              </NavLink>
+              <NavLink to="/faq" activeClassName="active">
+                FAQ
+              </NavLink>
             </Nav>
-        </Navbar.Collapse>
-    </Container>
-    </Navbar>
-)};
-
-export default NavBar;
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    );
+  };
+  
+  export default NavBar;
