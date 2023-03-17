@@ -22,7 +22,7 @@ const Locations = () => {
             </Container>
         </section>
 
-        <section>
+        <section className='py-5'>
             <Container>
                 <Row className='text-center'>
                     <Col md >
@@ -94,6 +94,23 @@ const Locations = () => {
                             < ImgCarousel />
                         </Col>
                     </Row>
+            </Container>
+        </section>
+
+        <section className='p-4 my-5'>
+            <Container>
+                <h3>Your Experience at Sober Landing</h3>
+                <p>
+                Staying at Sober Landing will be an incredibly transformative experience as it will provide you with the necessary tools, resources, and support to help you learn how to live drug and alcohol-free. You will be surrounded by a community of individuals who are also on the same journey towards recovery.
+                Our living environment will provide you with the necessary structure and routine needed to maintain a healthy and balanced lifestyle. 
+                At Sober Landing, you will be given the skills and confidence needed to successfully transition into a drug and alcohol-free life.
+                </p>
+                <h3>The Power of Community and Support in Recovery</h3>
+                <p>
+                Our sober house is designed to be a powerful tool in your recovery journey.
+                At our sober house, you will be surrounded by a community of individuals who understand the challenges of addiction and who are committed to supporting each other through the recovery process. 
+                Our sober house is not just a place to stay; it is a powerful asset that can help you transform your life and achieve lasting sobriety.
+                </p>
             </Container>
         </section>
     < Footer />
