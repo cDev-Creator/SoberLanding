@@ -8,33 +8,34 @@ import swan from '../assets/images/swan.png';
 
 const ImgCarousel = () => {
     return ( 
-        <section className='p-4'>
-            <Container className='p-2 img-carousel-container' style={{backgroundColor:'#3f4f62'}}>
-                <Carousel fade>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={house}
-                    alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img 
-                    className="d-block w-100"
-                    src={swan}
-                    alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={house}
-                    alt="Third slide"
-                    />
-                </Carousel.Item>
-                </Carousel>
-            </Container>
-        </section>
+    <section >
+        <Carousel interval={3000} fade>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src={house}
+            alt="First slide"
+            style={{ width: '100%', height: '100%' }} // add this line
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src={swan}
+            alt="Second slide"
+            style={{ width: '100%', height: '100%' }} // add this line
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src={house}
+            alt="Third slide"
+            style={{ width: '100%', height: '100%' }} // add this line
+            />
+        </Carousel.Item>
+        </Carousel>
+    </section>
     );
 }
 export default ImgCarousel;
