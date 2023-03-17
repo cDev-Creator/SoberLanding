@@ -4,20 +4,25 @@ import emailjs from "emailjs-com";
 import Copyright from "./Copyright";
 import Footer from "./Footer";
 
+import '../index.css';
+import Quote from './Quote';
+
 const Contact = () => {
+    
     function sendEmail(e) {
         e.preventDefault();
-        document.getElementById("message").style.display = 'block';
+        /* document.getElementById("message").style.display = 'none'; */
         emailjs.sendForm("service_8sjeme9","contact_mil3w2b", e.target, "57uokk2RisLqzWlkd")
-            .then((result) => {
+            .then(() => {
                 document.getElementById('message').textContent = "Your message was sent successfully!";
-                console.log(result.text);
-            }, (error) => {
+                document.getElementById("message").style.display = 'block';
+            }, () => {
                 document.getElementById('message').textContent = "There was an issue submiting your message.";
-                console.log(error.text);
+                document.getElementById("message").style.display = 'block';
             });
         e.target.reset()
     }
+
     return ( 
     <div>
         <section className='p-4' >
@@ -68,14 +73,22 @@ const Contact = () => {
                     <Col className='text-center'size={12} sm={12} >
                       <button type="submit" className="btn btn-primary mt-3">Submit</button>
                     </Col>
-                    <p id="message"></p>
+                    
                   </form>
             </Col>
         </Row>
     </Container>
-    </section>
-    <Footer /> 
-    < Copyright />
+    <Container>
+        <Col>
+            <p className='text-center p-3 rounded mt-4' id="message"></p>
+            </Col>
+        </Container>  
+        </section>
+        <div className='my-5'>
+        < Quote />
+        </div>
+        <Footer /> 
+        < Copyright />
     </div>
     );
 }

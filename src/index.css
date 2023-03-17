@@ -166,3 +166,15 @@ a.active {
 .bi{
   font-size: 50px;
 }
+
+#message {
+  border: 1px solid #80909fb3;
+  background-color:#80909f43;
+}
+
+/* make conatct form not zoom in on mobile */
+@media screen and (max-width: 767px) {
+  input, textarea {
+    font-size: 16px !important;
+  }
+}
