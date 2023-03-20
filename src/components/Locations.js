@@ -3,7 +3,11 @@ import Copyright from './Copyright';
 import { Container, Row, Col, Card} from 'react-bootstrap';
 import {BsArrowDown} from "react-icons/bs";
 import ImgCarousel from './ImgCarousel';
+import { Link } from 'react-router-dom';
+import DisplayBeds from './DisplayBeds';
+
 const Locations = () => {
+    const bedsAvailable = 4;
     return ( 
     <div>
         <section className='p-4 text-center' style={{backgroundColor:'#80909f'}}>
@@ -94,6 +98,14 @@ const Locations = () => {
                             < ImgCarousel />
                         </Col>
                     </Row>
+                    <div className='pt-5'><DisplayBeds /></div>
+            </Container>
+        </section>
+
+        <section className='p-5 my-5'style={{backgroundColor:'#d4cdc4'}} >
+            <Container className='text-center' >
+                <h2>Want to Learn More About Your Move to Riverwood?</h2>
+                <Link to='./Contact' style={{textDecoration:'none'}}><h4 className='text-muted p-2'> Message Us Today!</h4></Link>
             </Container>
         </section>
 
