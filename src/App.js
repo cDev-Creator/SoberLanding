@@ -5,17 +5,18 @@ import About from "./components/About";
 import Locations from "./components/Locations";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
+import UpdateBeds from "./components/UpdateBeds";
+import ScrollToTop from './components/ScrollToTop';
 
-import {Container, Button,Form, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 function App() {
   return (
     <Router>
-     
+      <ScrollToTop />
       <div className="App">
           <NavBar />
           <div className="content">
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/">
               <Home />
             </Route>
 
@@ -33,7 +34,12 @@ function App() {
 
             <Route exact path="/faq">
               <FAQ />
-              </Route> 
+            </Route> 
+
+            <Route exact path="/updatebeds">
+              <UpdateBeds />
+            </Route>
+
           </Switch>
           </div>
       </div>
