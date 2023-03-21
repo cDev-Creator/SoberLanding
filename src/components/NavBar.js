@@ -17,7 +17,7 @@ export const NavBar = () => {
     >
       <Container>
         <Navbar.Brand>
-          <h1 style={{fontSize:'30px'}}>Sober Landing</h1>
+          <h1 style={{fontSize:'30px', color:'rgba(255, 255, 255, 0.814)'}}>Sober Landing</h1>
         </Navbar.Brand>
           
         <Navbar.Toggle

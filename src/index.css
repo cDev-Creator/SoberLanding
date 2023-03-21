@@ -16,30 +16,6 @@ body {
 
 }
 
-/* html {
-  font-size: 62.5%; 
-}
-
-h1 {
-  font-size: 5rem; 
-}
-
-h2 {
-  font-size: 3.4rem; 
-}
-
-h4 {
-  font-size: 2.0rem;
-}
-
-p {
-  font-size: 2.6rem;
-}
-
-li {
-  font-size: 2.8rem;
-}
- */
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -52,7 +28,7 @@ li {
 }
 
 .navbar a {
-  color: var(--cello); 
+  color: rgba(255, 255, 255, 0.445); 
   font-size: 22px;
   margin-left: 20px;
   text-decoration: none;
@@ -74,7 +50,7 @@ li {
 
 a.active {
   transition: 0.2s;
-  color: var(--slategrey); 
+  color: rgba(255, 255, 255, 0.957);
 }
 
 
@@ -110,11 +86,10 @@ a.active {
   }
 }
 
-/* @media (min-width: 768px) {
-  .img-carousel-container {
-    width: 50%;
-  }
-} */
+/* showcase */
+.showcase-content {
+  margin-top:12rem
+}
 
 /* contact form */
 .bg-primary{
@@ -168,6 +143,7 @@ a.active {
 }
 
 #message {
+  display: none;
   border: 1px solid #80909fb3;
   background-color:#80909f43;
 }
@@ -177,4 +153,27 @@ a.active {
   input, textarea {
     font-size: 16px !important;
   }
+  .showcase-content {
+    margin-top:0px;
+  }
 }
+
+
+
+/* .accordion-button:focus {
+  box-shadow:none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #4800ff;
+  background-color: #5c8cac3c;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: #5c8cac71;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #80909f2c;
+}
+
+ button.accordion-button:not(.collapsed)::after {
+  color: red !important;
+}
+  */
