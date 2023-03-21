@@ -4,7 +4,7 @@
   margin: 0;
   font-family: 'Mukta', sans-serif;  color: #333;
   --westar:#d4cdc4;
-  --slategrey:#80909f;
+  --slategrey:#;
   --vinrouge:#965456;
   --leather:#906652;
   --cello:#3f4f62;
@@ -28,7 +28,8 @@ body {
 }
 
 .navbar a {
-  color: rgba(255, 255, 255, 0.445); 
+ /*  color: rgba(255, 255, 255, 0.341);  */
+ color: #3f4f62;
   font-size: 22px;
   margin-left: 20px;
   text-decoration: none;
@@ -50,7 +51,8 @@ body {
 
 a.active {
   transition: 0.2s;
-  color: rgba(255, 255, 255, 0.957);
+  color: #5c8cac;
+  /* color: rgba(255, 255, 255, 0.819); */
 }
 
 
@@ -88,7 +90,7 @@ a.active {
 
 /* showcase */
 .showcase-content {
-  margin-top:12rem
+  margin-top:5rem
 }
 
 /* contact form */

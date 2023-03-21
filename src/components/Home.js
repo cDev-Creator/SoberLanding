@@ -7,16 +7,16 @@ import { Container } from 'react-bootstrap';
 
 const Home = () => {
     return (  
-        <div>
+        <div /* style={{backgroundColor:'#f3f2ee'}} */>
             <Showcase />
             <section>
                 <Container>
-                    <div className='mt-5'>
-                        <h4>Are you seeking a supportive community to aid you in your new sober lifestyle?</h4>
-                        <p>If you're a woman seeking a safe and supportive environment to help you in your journey towards sobriety, look no further than Sober Landing. Our mission is to provide you with the tools and resources necessary to apply the skills and knowledge gained during treatment to your daily life.</p>
+                    <div className='m-4 pt-5'>
+                        <h2 className='text-center' style={{color:'#5c8cac'}}>Are you seeking a supportive community to aid you in your new sober lifestyle?</h2>
+                        <p  className='text-center'>If you're a woman seeking a safe and supportive environment to help you in your journey towards sobriety, look no further than Sober Landing. Our mission is to provide you with the tools and resources necessary to apply the skills and knowledge gained during treatment to your daily life.</p>
 
-                        <h2>Our Sobering Housing</h2>
-                        <p>Our sober housing offers a wide range of amenities to ensure that you feel comfortable and at home during your stay with us.</p>
+                        <h2>Our Sober Housing</h2>
+                        <p >Our sober housing offers a wide range of amenities to ensure that you feel comfortable and at home during your stay with us.</p>
                         <ul>
                             <li>Fully equipped kitchen with appliances and cooking utensils</li>
                             <li>Shared living areas with comfortable furniture and TV</li>
