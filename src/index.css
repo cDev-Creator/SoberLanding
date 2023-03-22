@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Mukta&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 * {
   margin: 0;
-  font-family: 'Mukta', sans-serif;  color: #333;
+/*   font-family: 'Mukta', sans-serif;   */
+  color: #333;
   --westar:#d4cdc4;
   --slategrey:#;
   --vinrouge:#965456;
@@ -16,6 +17,9 @@ body {
 
 }
 
+.title {
+  font-family: 'Julius Sans One', sans-serif !important;
+}
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -29,12 +33,13 @@ body {
 
 .navbar a {
  /*  color: rgba(255, 255, 255, 0.341);  */
+ font-family: 'Julius Sans One', sans-serif !important;
  color: #3f4f62;
-  font-size: 22px;
-  margin-left: 20px;
-  text-decoration: none;
-  padding: 6px;
-  margin-left: 40px;
+ font-size: 20px;
+ margin-left: 20px;
+ text-decoration: none;
+ padding: 6px;
+ margin-left: 40px;
 }
 
 /* .navbar a:focus {
@@ -86,6 +91,11 @@ a.active {
   to {
     transform: translateY(10px);
   }
+}
+
+li {
+  display: flex;
+  align-items: center;
 }
 
 /* showcase */
