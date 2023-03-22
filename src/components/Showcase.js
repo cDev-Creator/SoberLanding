@@ -9,7 +9,7 @@ const Showcase = () => {
         <section className=' full-screen-bg ' style={{backgroundColor: '#f3f4f5'}}/*  style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', height:'100vh' }} */>
           <NavBar />
         <div className='pt-3'>
-        <Container>
+        <Container className='px-4'>
             <div className='d-sm-flex align-items-center justify-content-between showcase-content'>
             <div style={{ marginRight: '50px' }}>
                 <h1 style={{ fontSize: '2.3rem', maxWidth: '400px'}}>Welcome to</h1> 

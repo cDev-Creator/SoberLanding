@@ -3,13 +3,15 @@ import { BsFillPhoneFill, BsFillPersonFill } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md'
 import { AiFillMail } from 'react-icons/ai'
 
+const icons = { fill: "#5c8cac", fontSize: "2rem" }
+
 const Footer = () => {
     return ( 
         <section className="p-4"> 
           <Container>
           <Row className="justify-content-center">
-          <Col sm={2} className="d-flex align-items-center justify-content-center">
-            <Col>
+          <Col sm={2}className="d-flex align-items-center justify-content-center">
+            <Col className="d-none d-md-block">
               <h2 className="mb-4">Sober Landing</h2>
               <p>To support women in recovery from alcohol and other drugs.</p>
             </Col>
@@ -17,23 +19,23 @@ const Footer = () => {
 
           <Col sm={4} className="d-flex align-items-center justify-content-center">
             <ul className="list-group list-group-flush lead text-center">
-              <li className="list-group-item d-flex align-items-center">
-                <span className="fw-bold me-2"><BsFillPersonFill /></span> Landyn Jennings
+              <li className="list-group-item d-flex align-items-center footer-li">
+                <span className="fw-bold me-2"><BsFillPersonFill style={icons}/></span> Landyn Jennings
               </li>
-              <li className="list-group-item d-flex justify-content-between align-items-center">
+              <li className="list-group-item d-flex justify-content-between align-items-center footer-li">
                 <div className="d-flex align-items-center">
-                  <span className="fw-bold me-2"><Row><MdLocationOn /></Row></span>
+                  <span className="fw-bold me-2"><Row><MdLocationOn style={icons}/></Row></span>
                   <div className="text-start">
                     6716 Riverwood<br />
                     Live Oak, TX 78233
                   </div>
                 </div>
               </li>
-              <li className="list-group-item d-flex align-items-center">
-                <span className="fw-bold me-2"><BsFillPhoneFill /></span> (555) 555-5555
+              <li className="list-group-item d-flex align-items-center footer-li">
+                <span className="fw-bold me-2"><BsFillPhoneFill style={icons}/></span> (555) 555-5555
               </li>
-              <li className="list-group-item d-flex align-items-center">
-                <span className="fw-bold me-2"><AiFillMail /></span> test@rand.test
+              <li className="list-group-item d-flex align-items-center footer-li">
+                <span className="fw-bold me-2"><AiFillMail style={icons}/></span> test@rand.test
               </li>
             </ul>
           </Col>

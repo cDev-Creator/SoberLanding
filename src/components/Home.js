@@ -13,7 +13,7 @@ const Home = () => {
             <div>
             <Showcase />
             <section>
-                <Container>
+                <Container >
                 <div className='m-4 pt-5'>
                     <div className="text-center d-none d-md-block">
                         <h2 style={{color:'#5c8cac'}}>Are you seeking a supportive community to aid you in your new sober lifestyle?</h2>
@@ -31,11 +31,11 @@ const Home = () => {
                         <path fill="#f3f4f5" fill-opacity="1" d="M0,192L60,176C120,160,240,128,360,133.3C480,139,600,181,720,165.3C840,149,960,75,1080,42.7C1200,11,1320,21,1380,26.7L1440,32V200H0V32Z"></path>
                     </svg>
                   <section style={{backgroundColor:'#f3f4f5'}}>
-                    <Container >
+                    <Container className='p-4'>
                         <Row>
                       
                         <Col>
-                        <h2>Our Sober Housing</h2>
+                        <h2 className='pt-5'>Our Housing</h2>
                         <p style={{maxWidth:'400px'}}>Our sober housing offers a wide range of amenities to ensure that you feel comfortable and at home during your stay with us.</p>
                         <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                             <li> <FaCheck style={{ marginRight: '10px'}} /> Fully equipped kitchen with appliances and cooking utensils</li>
@@ -60,7 +60,7 @@ const Home = () => {
                         <path fill="#f3f4f5" fill-opacity="1" d="M0,192L60,176C120,160,240,128,360,133.3C480,139,600,181,720,165.3C840,149,960,75,1080,42.7C1200,11,1320,21,1380,26.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
                     </svg>
 
-                   <Container className="my-5" >
+                   <Container className="my-5 p-4" >
                         <h2 style={{color:'#5c8cac'}} >Develop Lasting Realtionships</h2>
                         <p>We understand the importance of developing meaningful relationships with other women who are also on the path towards recovery. Our residents are encouraged to attend meetings and form bonds with other women who understand the struggles of maintaining sobriety. By supporting one another, we help each other progress towards a healthier and more fulfilling life.</p>
 
