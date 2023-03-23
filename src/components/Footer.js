@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const icons = { fill: "#5c8cac", fontSize: "2rem" }
 
-const Footer = () => {
+const Footer = ({bgcolor}) => {
     return ( 
         <section className="p-4"> 
           <Container>
@@ -20,11 +20,11 @@ const Footer = () => {
           </Col>
 
           <Col sm={4} className="d-flex align-items-center justify-content-center">
-            <ul className="list-group list-group-flush lead text-center">
-              <li className="list-group-item d-flex align-items-center footer-li">
+            <ul className="list-group list-group-flush lead text-center" >
+              <li style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li rat" >
                 <span className="fw-bold me-2"><BsFillPersonFill style={icons}/></span> Landyn Jennings
               </li>
-              <li className="list-group-item d-flex justify-content-between align-items-center footer-li">
+              <li style={{backgroundColor: bgcolor}} className="list-group-item d-flex justify-content-between align-items-center footer-li ">
                 <div className="d-flex align-items-center">
                   <span className="fw-bold me-2"><Row><MdLocationOn style={icons}/></Row></span>
                   <div className="text-start">
@@ -33,13 +33,13 @@ const Footer = () => {
                   </div>
                 </div>
               </li>
-              <li className="list-group-item d-flex align-items-center footer-li">
+              <li  style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li rat">
                 <span className="fw-bold me-2">
                   <BsFillPhoneFill style={icons}/>
                 </span>  
                 <a href="tel:2707025355">(555) 555-5555 </a>
               </li>
-              <li className="list-group-item d-flex align-items-center footer-li">
+              <li  style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li">
                 <span className="fw-bold me-2">
                   <AiFillMail style={icons}/>
                 </span> 

@@ -56,7 +56,7 @@ const About = () => {
 
         </div>
         <div style={{backgroundColor:'#f3f4f5'}}>
-        <Footer />
+        <Footer bgcolor={grey}/>
         </div>
         <Copyright />
     </div>
