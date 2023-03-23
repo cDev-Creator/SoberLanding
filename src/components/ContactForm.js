@@ -1,12 +1,14 @@
-import React from 'react';
+import {useState} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import '../index.css';
 
-const ContactForm = ({contactTitle,textAreaLabel }) => {
+import Button from 'react-bootstrap/Button';
+const ContactForm = ({contactTitle, textAreaLabel, bgcolor}) => {
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
     function sendEmail(e) {
         e.preventDefault();
-        /* document.getElementById("message").style.display = 'none'; */
         emailjs.sendForm("service_8sjeme9","contact_mil3w2b", e.target, "57uokk2RisLqzWlkd")
             .then(() => {
                 document.getElementById('message').textContent = "Your message was sent successfully!";
@@ -18,9 +20,9 @@ const ContactForm = ({contactTitle,textAreaLabel }) => {
         e.target.reset()
     }
     return ( 
-    <div>
-        <section className='p-4'>
-        <Container className= 'mt-5 shadow'>
+    <div style={{backgroundColor: bgcolor}}>
+        <section className='p-2' >
+        <Container className= 'mt-5'>
         <Row>
             <Col className="md-8 p-5 ">
                 <h2>{contactTitle}</h2>
@@ -49,7 +51,7 @@ const ContactForm = ({contactTitle,textAreaLabel }) => {
                     <Col ></Col>
 
                     <Col className='text-center'size={12} sm={12} >
-                      <button type="submit" className="btn btn-primary mt-3">Submit</button>
+                    <Button variant="dark" type="submit">Submit</Button>                     
                     </Col>
                     
                   </form>
