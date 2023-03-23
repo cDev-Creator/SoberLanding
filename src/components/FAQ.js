@@ -1,20 +1,27 @@
 import { Container, Accordion } from 'react-bootstrap';
 import '../index.css';
+import NavBar from './NavBar'
 import Footer from './Footer';
 import Copyright from './Copyright';
 import ContactForm from './ContactForm';
 const FAQ = () => {
     return (
       <div>
-        <section>
+      
+        <section style={{backgroundColor:'#f3f4f5'}}>
+        <NavBar/>
           <Container className='py-4' >
             <h1>Frequently Asked Questions</h1>
-            <p>We have compiled a list of commonly asked questions to help provide you with more information. 
+            <p className='text-muted'>We have compiled a list of commonly asked questions to help provide you with more information. 
             If you have any additional questions or concerns, please don't hesitate to contact us directly. We are here to support you on your journey towards recovery.</p>
           </Container>
           </section>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+            <path fill="#f3f4f5" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,170.7C384,139,480,85,576,64C672,43,768,53,864,74.7C960,96,1056,128,1152,122.7C1248,117,1344,75,1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+          </svg>
 
-          <section>
+          <section className='mt-3'>
           <Container>
             <Accordion>
             <Accordion.Item eventKey="0">
@@ -92,7 +99,6 @@ const FAQ = () => {
 
       <Footer />
       <Copyright />
-
     </div>
   );
 }
