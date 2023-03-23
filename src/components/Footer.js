@@ -2,6 +2,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BsFillPhoneFill, BsFillPersonFill } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md'
 import { AiFillMail } from 'react-icons/ai'
+import { Link } from "react-router-dom";
+
 
 const icons = { fill: "#5c8cac", fontSize: "2rem" }
 
@@ -32,10 +34,16 @@ const Footer = () => {
                 </div>
               </li>
               <li className="list-group-item d-flex align-items-center footer-li">
-                <span className="fw-bold me-2"><BsFillPhoneFill style={icons}/></span> (555) 555-5555
+                <span className="fw-bold me-2">
+                  <BsFillPhoneFill style={icons}/>
+                </span>  
+                <a href="tel:2707025355">(555) 555-5555 </a>
               </li>
               <li className="list-group-item d-flex align-items-center footer-li">
-                <span className="fw-bold me-2"><AiFillMail style={icons}/></span> test@rand.test
+                <span className="fw-bold me-2">
+                  <AiFillMail style={icons}/>
+                </span> 
+                <a href="mailto:mccoyng170@gmail.com">test@rand.test</a>
               </li>
             </ul>
           </Col>
