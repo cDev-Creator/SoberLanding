@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Mukta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+.box-shadow {
+  webkit-box-shadow: 0px 0px 32px 0px rgba(41, 41, 41, 0.027);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(41, 41, 41, 0.027);
+  box-shadow: 0px 0px 32px 0px rgba(41, 41, 41, 0.14);
+}
+
 * {
   margin: 0;
-/*   font-family: 'Mukta', sans-serif;   */
   color: #333;
   --westar:#d4cdc4;
   --slategrey:#;
@@ -10,27 +22,51 @@
   --leather:#906652;
   --cello:#3f4f62;
   --bazaar:#927478;
-  --rosybrown:#bb8a8d;
+  --rosybrown:#d4cdc482;
   --airforceblue:#5c8cac;
 }
-body { 
 
+.navbar-toggler-icon {
+  display: none;
+}
+
+body { 
+  /* font-family: 'Lora', serif; */
+ /*  font-family: 'Montserrat', sans-serif; */
+/*  font-family: 'Merriweather', serif; */
+font-family: 'Nunito Sans', sans-serif;
+
+/* Created with https://www.css-gradient.com */
 }
 
 .title {
   font-family: 'Julius Sans One', sans-serif !important;
 }
+
+.font-big {
+  font-size: 2.5rem !important;
+}
+
+.font-bigger {
+  font-size: 3.5rem !important;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
 }
 
 /* navbar */
-.navbar {
-/*   padding: 20px; */
-/*   */
-}
 
+@media (min-width: 767px) {
+  .custom-hamburger {
+    display: none;
+  }
+}
+button.custom-hamburger {
+  border:none;
+  background-color: transparent;
+}
 .navbar a {
  /*  color: rgba(255, 255, 255, 0.341);  */
  font-family: 'Julius Sans One', sans-serif !important;
@@ -100,9 +136,14 @@ li {
   align-items: center;
 }
 
+/* .msg-today:hover {
+  color:red !;
+  font-size: 3rem;
+} */
+
 /* showcase */
 .showcase-content {
-  margin-top:5rem
+  margin-top:5rem;
 }
 
 /* contact form */
@@ -152,14 +193,15 @@ li {
   background-color: #80909fde !important;
 }
 
-.bi{
-  font-size: 50px;
-}
-
 #message {
   display: none;
   border: 1px solid #80909fb3;
   background-color:#80909f43;
+}
+
+.blue {
+  color:var(--airforceblue) !important;
+  font-size: 0.8rem !important;
 }
 
 /* FAQ */
@@ -200,6 +242,19 @@ li {
   border: 1px soild red;
 }
 
+
+/* Footer */
+
+a {
+  color:#333;
+  text-decoration:none;
+}
+
+a:hover {
+  transition: 0.5s;
+  color:#333333ad;
+}
+
 /* make conatct form not zoom in on mobile */
 @media screen and (max-width: 767px) {
   input, textarea {
@@ -213,26 +268,4 @@ li {
     font-size: 1.8rem;
   }
 }
-
-
-/* .accordion-button:focus {
-  box-shadow:none !important;
-}
-.accordion-button:not(.collapsed) {
-  color: #4800ff;
-  background-color: #5c8cac3c;
-}
-
-.accordion {
-  --bs-accordion-btn-focus-border-color: #5c8cac71;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #80909f2c;
-}
-
- button.accordion-button:not(.collapsed)::after {
-  color: red !important;
-}
-  */
-
-
-
 
