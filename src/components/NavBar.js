@@ -5,10 +5,8 @@ import { CSSTransition } from 'react-transition-group';
 
 import Hamburger from 'hamburger-react'
 
-export const NavBar = () => {
+export const NavBar = (props) => {
   const [expanded, setExpanded] = useState(false);
-
-
   const handleSelect = () => {
     setExpanded(false);
   };
@@ -21,28 +19,30 @@ export const NavBar = () => {
   >
     <Container>
       <Navbar.Brand>
-        <h1 className='title' style={{fontSize:'28px'}}>Sober Landing</h1>
+        <h1 className='title' style={{fontSize:'28px', color:props.linkColor}}>Sober Landing</h1>
       </Navbar.Brand>
       <button className='custom-hamburger' onClick={() => setExpanded(!expanded)}>
-        <Hamburger color='#5c8cac' duration={0.5}/>
+        <Hamburger color={props.hamburgerColor} duration={0.5}/>
       </button>
       <Navbar.Collapse
         id="responsive-navbar-nav"
         onSelect={handleSelect}
       >
         <Nav className="ms-auto">
-          <NavLink
-            exact
-            to="/"
-            activeClassName="active"
-            onClick={() => setExpanded(false)}
-          >
-            Home
-          </NavLink>
+      <NavLink
+        exact
+        to="/"
+        activeClassName="active"
+        onClick={() => setExpanded(false)}
+        style={{ color: props.linkColor }}
+      >
+        Home
+      </NavLink>
           <NavLink
             to="/about"
             activeClassName="active"
             onClick={() => setExpanded(false)}
+            style={{ color: props.linkColor }}
           >
             About
           </NavLink>
@@ -50,6 +50,7 @@ export const NavBar = () => {
             to="/locations"
             activeClassName="active"
             onClick={() => setExpanded(false)}
+            style={{ color: props.activeColor }}
           >
             Our House
           </NavLink>
@@ -57,6 +58,7 @@ export const NavBar = () => {
             to="/contact"
             activeClassName="active"
             onClick={() => setExpanded(false)}
+            style={{ color: props.linkColor }}
           >
             Contact
           </NavLink>
@@ -64,6 +66,7 @@ export const NavBar = () => {
             to="/faq"
             activeClassName="active"
             onClick={() => setExpanded(false)}
+            style={{ color: props.linkColor }}
           >
             FAQ
           </NavLink>
