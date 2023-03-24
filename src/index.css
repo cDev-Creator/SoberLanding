@@ -63,6 +63,25 @@ font-family: 'Nunito Sans', sans-serif;
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+/*   .navbar-collapse {
+    -webkit-transition: height 0.3s ease-in-out !important;
+    -moz-transition: height 0.3s ease-in-out !important;
+    -o-transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out!important ;
+  }  */
+  .show, .collapsing {
+    height: 100vh !important;
+  }
+
+  .navbar a {
+    font-size: 1.8rem !important;
+   /*  margin-left: 20px !important; */
+  }
+}
+
+
 button.custom-hamburger {
   border:none;
   background-color: transparent;
@@ -72,7 +91,7 @@ button.custom-hamburger {
  font-family: 'Julius Sans One', sans-serif !important;
  color: #3f4f62;
  font-size: 20px;
- margin-left: 20px;
+
  text-decoration: none;
  padding: 6px;
  margin-left: 40px;
@@ -93,11 +112,8 @@ button.custom-hamburger {
 a.active {
   transition: 0.2s;
   color: #5c8cac;
-  
-
   /* color: rgba(255, 255, 255, 0.819); */
 }
-
 
 /* home page */
 

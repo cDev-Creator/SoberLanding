@@ -1,15 +1,18 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+
 import Hamburger from 'hamburger-react'
 
 export const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
+
   const handleSelect = () => {
     setExpanded(false);
   };
-  
+
   return (
     <Navbar
     collapseOnSelect
@@ -68,6 +71,7 @@ export const NavBar = () => {
       </Navbar.Collapse>
     </Container>
   </Navbar>
+
   );
 };
 
