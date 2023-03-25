@@ -21,37 +21,37 @@ const ContactForm = ({contactTitle, textAreaLabel, bgcolor}) => {
     }
     return ( 
     <div style={{backgroundColor: bgcolor}}>
-        <section className='p-2' >
-        <Container className= 'mt-5'>
+        <section >
+        <Container>
         <Row>
-            <Col className="md-8 p-5 ">
-                <h2>{contactTitle}</h2>
+            <Col className="md-8 p-4">
+                <h1 className='font-big'>{contactTitle}</h1>
                 <form onSubmit={sendEmail} className="row g-3 contact-form mt-4">
                     <Col className='ml-3'size={12} sm={6} >
-                      <label className="form-label">First Name</label>
+                      <label className="form-label blue">First Name</label>
                       <input name="firstName" type="text" className="form-control" required/>
                     </Col>
                     <Col size={12} sm={6} >
-                      <label className="form-label">Last Name</label>
+                      <label className="form-label blue">Last Name</label>
                       <input name="lastName" type="text" className="form-control" required/>
                     </Col>
  
                     <Col size={12} sm={6} >
-                        <label className="form-label">Email Address</label>
+                        <label className="form-label blue">Email Address</label>
                         <input name='email' type="email" className="form-control" required/>
                 
-                        <label className="form-label">Phone Number</label>
+                        <label className="form-label blue">Phone Number</label>
                         <input name='phone' type="tel" className="form-control"/>
                     </Col>
 
                     <Col size={12} sm={12} >
-                        <label className="form-label">{textAreaLabel}</label>
+                        <label className="form-label blue">{textAreaLabel}</label>
                         <textarea name='message'className="form-control"/>
                     </Col>
                     <Col ></Col>
 
                     <Col className='text-center'size={12} sm={12} >
-                    <Button variant="dark" type="submit">Submit</Button>                     
+                    <Button variant="dark" type="submit" className='submit-btn'>Submit</Button>                     
                     </Col>
                     
                   </form>
