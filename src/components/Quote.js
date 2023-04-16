@@ -12,14 +12,14 @@ const blue = {color:'#5c8cac'};
 
 
 
-const Quote = () => {
+const Quote = ({quote, author}) => {
   return ( 
     <div>
  <section className="p-4"/* style={sectionStyle} */>
           <Container style={{borderRadius: '24% 76% 35% 65% / 46% 29% 71% 54%'}}>
             <div className='p-1'>
-            <h1 className="px-2 title text-md-center text-sm-left">"The fist step towards getting somewhere is to decide you're not going to stay where you are"</h1>
-            <h3 className="pb-5 pt-4 title text-md-center text-sm-left" style={blue}>- J.P. Morgan</h3>
+            <h1 className="px-2 title text-md-center text-sm-left font-big">{quote}</h1>
+            <h3 className="pb-5 pt-4 title text-md-center text-sm-left" style={blue}>- {author}</h3>
             </div>
           </Container>
         </section>
