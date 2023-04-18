@@ -180,22 +180,35 @@ li {
 
 /* locations page */
 .carousel-fade .carousel-item {
-  opacity: 0.5;
-  transition: opacity 1.5s ease;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
   opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
-  transition: opacity 1.5s ease;
   opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
+@media (min-width: 1500px) {
+  .carousel-fade {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .carousel-fade {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
 /* contact form */
 .bg-primary{
   background-color: #80909fa6 !important;
