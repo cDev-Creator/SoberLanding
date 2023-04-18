@@ -179,6 +179,13 @@ li {
 }
 
 /* locations page */
+@media (min-width:767px){
+  .amenities{
+    margin-top:100px;
+  }
+}
+
+
 .carousel-fade .carousel-item {
   opacity: 0;
   transition: opacity 1s ease-in-out;
