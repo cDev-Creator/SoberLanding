@@ -42,7 +42,8 @@ const Contact = () => {
         <section className="contact-call">
         <Container className="p-4 my-3">
             <h1 className="font-big">Give Us a Call</h1>
-            <a className="font-md" href="tel:2707025355" style={{color: '#5c8cac'}}>(555) 555-5555 </a>
+            <a className="font-md" href="tel:2703136265" style={{color: '#5c8cac'}}>(270) 313-6265 </a>
+
         </Container>
         </section>
 
