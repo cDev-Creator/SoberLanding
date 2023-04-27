@@ -9,7 +9,7 @@ const ContactForm = ({contactTitle, textAreaLabel, bgcolor}) => {
 
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm("service_8sjeme9","contact_mil3w2b", e.target, "57uokk2RisLqzWlkd")
+        emailjs.sendForm("service_07gkzhi","sober_dxqcyyo", e.target, "57uokk2RisLqzWlkd")
             .then(() => {
                 document.getElementById('message').textContent = "Your message was sent successfully!";
                 document.getElementById("message").style.display = 'block';
@@ -41,7 +41,7 @@ const ContactForm = ({contactTitle, textAreaLabel, bgcolor}) => {
                         <input name='email' type="email" className="form-control" required/>
                 
                         <label className="form-label blue">Phone Number</label>
-                        <input name='phone' type="tel" className="form-control"/>
+                        <input name='phone' type="tel" className="form-control" required/>
                     </Col>
 
                     <Col size={12} sm={12} >
