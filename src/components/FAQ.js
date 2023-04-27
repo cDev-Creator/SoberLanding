@@ -27,21 +27,22 @@ const FAQ = () => {
             <Accordion.Item eventKey="0">
               <Accordion.Header>How much is rent?</Accordion.Header>
               <Accordion.Body>
-                The weekly rent at Sober Landing is $200. 
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>Are pets allowed?</Accordion.Header>
-              <Accordion.Body>
-              We do not allow pets, but we do currently have a dog living in the home for moral support!
+                The weekly rent for all rooms at Sober Landing is $200. 
               </Accordion.Body>
             </Accordion.Item>
 
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="1">
               <Accordion.Header>How long can I stay at Sober Landing?</Accordion.Header>
               <Accordion.Body>
               At Sober Landing, we understand that each person's recovery journey is unique and that recovery takes time. 
               We don't believe in putting a time constraint on how long residents can stay with us!
+              </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Are pets allowed?</Accordion.Header>
+              <Accordion.Body>
+              We do not allow pets, but we do currently have a dog living in the home for moral support!
               </Accordion.Body>
             </Accordion.Item>
 
