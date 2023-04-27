@@ -5,45 +5,46 @@ import { AiFillMail } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 
 
-const icons = { fill: "#5c8cac", fontSize: "2rem" }
 
-const Footer = ({bgcolor}) => {
+const Footer = ({bgcolor, iconcolor, textcolor}) => {
+const icons = { fill: iconcolor, fontSize: "2rem" }
+
     return ( 
-        <section className="p-4"> 
+        <section className="p-4" > 
           <Container>
           <Row className="justify-content-center">
           <Col sm={2}className="d-flex align-items-center justify-content-center">
             <Col className="d-none d-md-block">
-              <h2 className="mb-4">Sober Landing</h2>
-              <p>To support women in recovery from alcohol and other drugs.</p>
+              <h2 style={{color: textcolor}} className="mb-4 title">Sober Landing</h2>
+              <p style={{color: textcolor}}>To support women in recovery from alcohol and other drugs.</p>
             </Col>
           </Col>
 
           <Col sm={4} className="d-flex align-items-center justify-content-center">
             <ul className="list-group list-group-flush lead text-center" >
-              <li style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li rat" >
-                <span className="fw-bold me-2"><BsFillPersonFill style={icons}/></span> Landyn Jennings
+              <li style={{backgroundColor: bgcolor, color: textcolor}} className="title list-group-item d-flex align-items-center footer-li rat" >
+                <span className="fw-bold me-2 "><BsFillPersonFill style={icons}/></span> Landyn Jennings
               </li>
-              <li style={{backgroundColor: bgcolor}} className="list-group-item d-flex justify-content-between align-items-center footer-li ">
+              <li style={{backgroundColor: bgcolor, color: textcolor}}  className="title list-group-item d-flex justify-content-between align-items-center footer-li ">
                 <div className="d-flex align-items-center">
                   <span className="fw-bold me-2"><Row><MdLocationOn style={icons}/></Row></span>
-                  <div className="text-start">
+                  <div className="text-start" style={{color: textcolor}}>
                     6716 Riverwood<br />
                     Live Oak, TX 78233
                   </div>
                 </div>
               </li>
-              <li  style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li rat">
+              <li style={{backgroundColor: bgcolor}} className="title list-group-item d-flex align-items-center footer-li rat">
                 <span className="fw-bold me-2">
                   <BsFillPhoneFill style={icons}/>
                 </span>  
-                <a href="tel:2707025355">(555) 555-5555 </a>
+                <a href="tel:2703136265" style={{color: textcolor}}>(270) 313-6265 </a>
               </li>
-              <li  style={{backgroundColor: bgcolor}} className="list-group-item d-flex align-items-center footer-li">
+              <li style={{backgroundColor: bgcolor}} className="title list-group-item d-flex align-items-center footer-li">
                 <span className="fw-bold me-2">
                   <AiFillMail style={icons}/>
                 </span> 
-                <a href="mailto:mccoyng170@gmail.com">test@rand.test</a>
+                <a style={{color: textcolor}} id='email-size' href="mailto:Soberlandinghouse@gmail.com">Soberlandinghouse@gmail.com</a>
               </li>
             </ul>
           </Col>

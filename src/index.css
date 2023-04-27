@@ -20,9 +20,6 @@
   }
 }
 
-/* section {
-  margin-bottom: 0px !important;
-} */
 
 * {
   margin: 0;
@@ -42,12 +39,10 @@
 }
 
 body { 
-  /* font-family: 'Lora', serif; */
- /*  font-family: 'Montserrat', sans-serif; */
-/*  font-family: 'Merriweather', serif; */
-font-family: 'Nunito Sans', sans-serif;
 
-/* Created with https://www.css-gradient.com */
+font-family: 'Nunito Sans', sans-serif;
+font-size:1.1rem;
+
 }
 
 .title {
@@ -94,6 +89,16 @@ font-family: 'Nunito Sans', sans-serif;
     font-size: 1.8rem !important;
    /*  margin-left: 20px !important; */
   }
+
+  li{
+    font-size:1.3rem;
+  }
+
+  .icons{
+    font-size: 2.5rem;
+  }
+
+
 }
 
 
@@ -132,6 +137,16 @@ a.active{
 }
 
 /* home page */
+
+/* .margin-100 {
+  margin-top:300px;
+}
+ */
+
+ li{
+  margin-bottom:10px;
+ }
+
 
 .accordion-body {
   color: var(--cello);
@@ -329,6 +344,10 @@ a {
 a:hover {
   transition: 0.5s;
   color:#333333ad;
+}
+
+#email-size{
+  font-size: 1.1rem !important;
 }
 
 /* make conatct form not zoom in on mobile */
