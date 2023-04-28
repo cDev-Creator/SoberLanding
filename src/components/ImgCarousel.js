@@ -15,6 +15,10 @@ import house9 from '../assets/images/9.jpg';
 import house10 from '../assets/images/10.jpg';
 import house11 from '../assets/images/11.jpg';
 
+import house13 from '../assets/images/13.jpg';
+import house15 from '../assets/images/15.jpg';
+
+
 
 const ImgCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -40,11 +44,30 @@ const ImgCarousel = () => {
           activeIndex={activeIndex}
           onSelect={handleItemClick}
         >
+
+          <Carousel.Item >
+            <img
+              className="d-block w-100"
+              src={house13}
+              alt="house slide"
+              style={{ width: "50%", height: "50%" }}
+            />
+          </Carousel.Item>
+
+          <Carousel.Item >
+            <img
+              className="d-block w-100"
+              src={house15}
+              alt="house slide"
+              style={{ width: "50%", height: "50%" }}
+            />
+          </Carousel.Item>
+
           <Carousel.Item >
             <img
               className="d-block w-100"
               src={house2}
-              alt="First slide"
+              alt="house slide"
               style={{ width: "50%", height: "50%" }}
             />
           </Carousel.Item>
@@ -53,7 +76,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house3}
-              alt="Third slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -62,7 +85,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house4}
-              alt="Fourth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -71,7 +94,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house5}
-              alt="Fifth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -80,7 +103,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house6}
-              alt="Sixth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -89,7 +112,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house7}
-              alt="Seventh slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -98,7 +121,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house8}
-              alt="Eighth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -107,7 +130,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house9}
-              alt="Ninth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -116,7 +139,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house10}
-              alt="Tenth slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
@@ -125,7 +148,7 @@ const ImgCarousel = () => {
             <img
               className="d-block w-100"
               src={house11}
-              alt="Eleventh slide"
+              alt="house slide"
               style={{ width: "100%", height: "100%" }}
             />
           </Carousel.Item>
