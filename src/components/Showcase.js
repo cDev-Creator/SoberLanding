@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import NavBar from "./NavBar";
-import house from '../assets/images/hh.png';
-import bg from '../assets/images/water.jpg';
+import house from '../assets/images/12_cleanup.png';
+/* import house from '../assets/images/hh.png'; */
 
 const Showcase = () => {
     return (  
@@ -19,7 +19,7 @@ const Showcase = () => {
                  <p className='my-4' style={{ maxWidth: '500px' }}>Our aim is to create a nurturing atmosphere where individuals struggling with addiction can receive the support and guidance they need to heal. We equip our residents with the essential tools they need to stay sober.</p>
   <Link to="/Contact"><button className='btn btn-lg btn-dark mt-4 title'>Contact Us</button></Link>
             </div>
-            <img src={house} alt="image of home" className="img-fluid w-75 w-sm-50 d-none d-sm-block" style={{ maxWidth: '550px', borderRadius: '115px 15px', opacity: '0.2'}}></img>
+            <img src={house} alt="image of home" className="img-fluid w-75 w-sm-50 d-none d-sm-block" style={{ maxWidth: '450px',maxHeight: '450px', borderRadius: '49% 51% 52% 48% / 54% 55% 45% 46% ', opacity: '0.25', border: '4px solid #5c8cac'}}></img>
 
             </div>
         </Container>
