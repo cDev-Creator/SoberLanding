@@ -48,7 +48,7 @@ const UpdateBeds = () => {
                     <h2 style={{textDecoration:'underline'}}className="p-5" >Update House Availablity</h2>
                     <form onSubmit={handleSubmit}>
                         <label>
-                            Beds available:
+                            Beds available: 
                         </label>
                         <input
                             type="number"
