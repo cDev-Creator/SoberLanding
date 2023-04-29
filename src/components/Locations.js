@@ -34,7 +34,7 @@ const Locations = () => {
         <section className='px-4'>
             <Container>
                 <h1 className='font-big'>What We Offer at Riverwood</h1>
-                <p>At Sober Landing, our top priority is ensuring our residents feel at home. That's why we provide a living environment that promotes sobriety and overall wellness. We believe that personal freedom and comfort are essential components of successful rehabilitation, which is why we offer our residents the space and resources they need to rebuild their lives.</p>
+                <p>At Sober Landing, our top priority is ensuring our residents feel at home. That's why we provide a living environment that promotes sobriety and overall wellness. We believe that personal freedom and comfort are essential components of successful rehabilitation, which is why we offer our residents the space they need to rebuild their lives.</p>
                 <h3 className='pt-3 font-md' style={{color:blue}}>Our Sober Rooms</h3>
                 <p>We offer a range of different room options to fit your needs. Our home includes a four person room with a spacious master bathroom, one two person room, two single person rooms, and we have a three person room coming soon! </p>
             </Container>
@@ -58,7 +58,6 @@ const Locations = () => {
                         </Col>
                         
                         <Col className= 'col-end'>
-                        {/* <h1 className="d-none d-sm-flex">Gallery</h1> */}
                             < ImgCarousel />
                         </Col>
                     </Row>
@@ -85,7 +84,7 @@ const Locations = () => {
                 <p>
                 Sober Landing was created for those ready to start a new life outside of drugs and alcohol. 
                 Choosing to live in a sober living house is possibly the next step you need to take on your road to 
-                recovery. At our home, you will be surrounded by a community of individuals who are also on the same journey towards recovery. Our living environment will provide you with the necessary structure and routine needed to maintain a healthy and balanced lifestyle. 
+                recovery. At our home, you will be surrounded by a community of individuals who are also on the same journey towards recovery. Our living environment will provide you with the necessary structure to maintain a healthy and balanced lifestyle. 
                 At Sober Landing, you will be given the skills and confidence needed to successfully transition into a drug and alcohol-free life.
                 </p>
                 <h2 className='pt-5 font-md' style={{color:blue}}>The Power of Community and Support in Recovery</h2>
@@ -99,12 +98,6 @@ const Locations = () => {
                 </p>
             </Container>
         </section>
-{/*       single line  <svg xmlns="http://www.w3.org/2000/svg" version="1.1"  viewBox="0 0 700 200"><path d="M2.351564645767212,125.77005004882812C40.38242373347283,119.33971248626709,106.29451078534126,92.74903343200684,187.86795043945312,94.40254974365234C269.441390093565,96.05606605529785,316.6763832092285,132.54991607666017,400.2707824707031,133.8359832763672C483.86518173217775,135.1220504760742,518.4814445495606,97.36901878356933,595.6455078125,100.6760482788086C672.8095710754394,103.98307777404786,739.5686026000976,139.86301830291748,776.6808471679688,149.96783447265625" fill="none" stroke-width="1" stroke="#ac7c5c" stroke-linecap="round" stroke-opacity="0.31"></path><defs><linearGradient id="SvgjsLinearGradient1002"><stop stop-color="hsl(37, 99%, 67%)" offset="0"></stop><stop stop-color="hsl(316, 73%, 52%)" offset="1"></stop></linearGradient></defs></svg>
- */}      
-
- {/* TRY OUT  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
-        <path fill="#80909f" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,224C384,245,480,267,576,256C672,245,768,203,864,208C960,213,1056,267,1152,266.7C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>  */}
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
   <path fill="#5c8cac" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,245.3C672,245,768,203,864,165.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>

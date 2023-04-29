@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBed, FaBath } from 'react-icons/fa';
 import { BsDoorOpenFill } from 'react-icons/bs';
+const iconColor ='#5c8cac';
 
 const DisplayBeds = (rat,rat1) => {
     const [bedsData, setBedsData] = useState([{}]);
@@ -16,11 +17,9 @@ const DisplayBeds = (rat,rat1) => {
             ) : (
                 bedsData.beds.map((bed, i) => (
                     <div key={i}>
-                    <p> <FaBed />{bed} beds available <FaBath/> 3 bath <BsDoorOpenFill/>4 bedrooms</p>
+                    <p> <FaBed fill={iconColor}/> {bed} beds available <FaBath fill={iconColor}/> 2.5 bath <BsDoorOpenFill fill={iconColor}/>4 bedrooms</p>
                    {/*  <p>{bed}</p> */}
                     </div>
-
-                 
                 ))
             )}
         </div>

@@ -13,7 +13,7 @@ const FAQ = () => {
           <Container className='p-4'>
             <h1 className='font-bigger title'>Frequently Asked Questions</h1>
             <p className='text-muted'>We have compiled a list of commonly asked questions to help provide you with more information. 
-            If you have any additional questions or concerns, please don't hesitate to contact us directly. We are here to support you on your journey towards recovery.</p>
+            If you have any additional questions or concerns, please don't hesitate to contact us directly. We are here to support you on your journey towards recovery!</p>
           </Container>
           </section>
           
