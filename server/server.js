@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
-require("dotenv").config();
+require('dotenv').config({ path: './server/.env' });
 
 const uri = process.env.MONGO_URI;
 async function connect() {
