@@ -4,9 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
 
-const uri =
-  "mongodb+srv://soberlanding:s0ber3landing67@soberlandingcluster.aswv729.mongodb.net/soberlandingdb?retryWrites=true&w=majority";
-
+const uri = process.env.MONGO_URI;
 async function connect() {
   try {
     await mongoose.connect(uri);
