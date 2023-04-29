@@ -30,7 +30,7 @@ const Contact = () => {
 
         <Container className='p-4'>
         <h1 className='font-bigger title'>We’d Love to Hear from You.</h1>
-        <p className='text-muted'>By utilizing the tools and techniques provided during treatment and meetings, you can establish a strong foundation for a healthy, clean, and sober lifestyle. We invite you to contact us today to schedule a tour of our home and see how we can support you on your journey towards lasting recovery.</p>
+        <p className='text-muted'>By utilizing the tools that are provided during your stay, we firmly believe you that will establish a strong foundation for a healthy and sober lifestyle. We invite you to contact us today to schedule a tour of our home and see how we can support you on your journey towards lasting recovery!</p>
    
         </Container>  
         </section>
@@ -47,11 +47,14 @@ const Contact = () => {
         </Container>
         </section>
 
-        <ContactForm contactTitle='Send Us a Message' textAreaLabel='Message' />
+        <section style={{marginBottom:'100px'}}>
+        <ContactForm contactTitle='Send Us a Message' textAreaLabel='Message'/>
+        </section>
         
         <div className='mt-5'>
-        < Quote quote='Though nobody can go back and make a new beginning, anyone can start over and make a new ending.' 
-        author='Chico Xavier'/>
+      
+          < Quote quote={'“To watch people recover, to see them help others, to watch loneliness vanish, to see a fellowship grow up about you, to have a host of friends — this is an experience you must not miss.”'}
+      author='A.A. Big Book'/>
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
