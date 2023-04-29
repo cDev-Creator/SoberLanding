@@ -13,30 +13,27 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
+        <div className="content">
          
-          <div className="content">
           <Switch>
             <Route exact path="/">
+             
               <Home />
             </Route>
 
             <Route exact path="/about">
-              <NavBar />
               <About />
             </Route>
 
             <Route exact path="/locations">
-              <NavBar />
               <Locations />
             </Route> 
 
             <Route exact path="/contact">
-              <NavBar />
               <Contact />
             </Route>
 
             <Route exact path="/faq">
-              <NavBar />
               <FAQ />
             </Route> 
 
