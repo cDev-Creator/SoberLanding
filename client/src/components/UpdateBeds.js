@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
+const API_URL = "https://sl3.onrender.com/bedcount";
+
 const UpdateBeds = () => {
     const [bedsData, setBedsData] = useState([{}]);
     const [bedsToUpdate, setBedsToUpdate] = useState("undefined");
@@ -9,14 +11,17 @@ const UpdateBeds = () => {
     const [errorMessage, setErrorMessage] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:5000/bedCount")
+        /* fetch("http://localhost:5000/bedCount") */
+        fetch("https://sl3.onrender.com/bedcount")
             .then((response) => response.json())
             .then((data) => setBedsData(data));
     }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch("http://localhost:5000/bedCount", {
+        /* fetch("http://localhost:5000/bedCount", */
+        fetch("https://sl3.onrender.com/bedcount",
+        {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
