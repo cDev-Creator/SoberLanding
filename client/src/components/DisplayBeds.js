@@ -18,9 +18,7 @@ const DisplayBeds = () => {
         {typeof bedsData.beds === "undefined" ? (
             <p>Loading...</p>
         ) : (
-            <div>
-                <p> <FaBed fill={iconColor}/> {bedsData.beds} beds <FaBath fill={iconColor}/> 2.5 bath <BsDoorOpenFill fill={iconColor}/>4 bedrooms</p>
-            </div>
+            <h2 style={{ fontSize:'2.5rem'}}>We currently have <span style={{color:"#5c8cac", textDecoration:'underline', textUnderlineOffset: '5px', fontSize:'3rem'}}>{bedsData.beds}</span> slots available for move-in.</h2>
         )}
     </div>
     );
