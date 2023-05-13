@@ -1,30 +1,20 @@
-# Getting Started with Create React App
+# Sober Landing
+This repository contains the code for Sober Landing, a women's sober home website. Built using the MERN (MongoDB, Express.js, React, Node.js) stack, the website provides information about the sober home, its services, and aims to help women seeking a supportive and sober living environment.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live: https://soberlandinghome.com/
+## Features
 
-## Available Scripts
+### Mobile-First Design:
+The website is designed with a mobile-first approach, which ensures optimal viewing and usability on mobile devices. It is responsive and adapts to different screen sizes, providing a seamless and visually appealing experience across all devices.
 
-In the project directory, you can run:
+###Customized Design Elements: 
+The website uses customized design elements that give it a clean and modern feel. These design elements contribute to an aesthetically pleasing user experience.
 
-### `npm start`
+### Updateable Bed Count: 
+Staff members can easily update the available bed count at Sober Landing. This feature provides transparency to potential residents about the current availability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Contact Opportunities: 
+The website provides multiple contact opportunities, including a contact form, phone number, and email address. This allows potential residents or their families to easily ask quesions or schedule a visit.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### All About Sober Landing
+A dedicated page elaborates on Sober Landing's mission and core values. It explains the organization's commitment to supporting women on their recovery journey and fostering a safe and nurturing environment for them to build connections in.
