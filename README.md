@@ -1,7 +1,6 @@
 # Sober Landing
 This repository contains the code for Sober Landing, a women's sober home website. Built using the MERN (MongoDB, Express.js, React, Node.js) stack, the website provides information about the sober home, its services, and aims to help women seeking a supportive and sober living environment.
 
-Live: https://soberlandinghomes.com/
 ## Features
 
 ### Mobile-First Design:
