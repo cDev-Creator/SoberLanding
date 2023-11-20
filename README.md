@@ -6,7 +6,7 @@ This repository contains the code for Sober Landing, a women's sober home websit
 ### Mobile-First Design:
 The website is designed with a mobile-first approach, which ensures optimal viewing and usability on mobile devices. It is responsive and adapts to different screen sizes which provides a seamless and visually appealing experience across all devices.
 
-###Customized Design Elements: 
+### Customized Design Elements: 
 The website uses customized design elements that give it a clean and modern feel. These design elements contribute to an aesthetically pleasing user experience.
 
 ### Updateable Bed Count: 
